@@ -1,66 +1,239 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="example.css">
-    <style>
-       /* .container{
-        background-color: rgb(186, 186, 22);
-        padding: 30px;
-       } */
-       
-       .row{
-            background-color: aqua;
-            margin-bottom: 10px;
-            
-            
-           
-        }
-        .row div{
-            background-color: orangered;
-            color: white;  
-            font-weight: bold;
-            border-color: black;
-        }
-        /* .col,
-        .col-2
-        
-        {
-            background-color: rgb(120, 101, 101);
-            padding: 10px;
-            height: 50px;
-            border: 1px solid red;
-            text-align: center;
-            font-weight: bold;
-        }
-         */
-         .body{
-            background-color: aqua;
-         }
-     .col-auto{
-        height: 100px;
-        width: 100px;
-     }
-     .pill{
-        width: 200px;
-     }
- 
-    </style>
 </head>
 <body>
-<div class="container">
-    <ul class="list-inline-item">
-        <li class="list-inline-item">List Item</li>
-        <li class="list-inline-item">List Item</li>
-        <li class="list-inline-item">List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-    </ul>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <!---navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Price</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>              
+          </div>
+        </div>
+      </nav>
+
+      <!--Home-->
+   <section id="home">
+      <p class="text-center">I am a <span>webdeveloper</span> </p>
+      <p class="text-center">I am a <span>YouTuber</span> </p>
+   </section>
+   
+   <!--About-->
+
+   <section id="about">
+       <div class="circle">
+         <img src="hari.png">
+         <div class="content">
+           <h1>ABOUT ME</h1> 
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure molestias qui perferendis quisquam sed, laboriosam dolores aperiam est saepe voluptatibus! Aspernatur minima deleniti vel accusamus nesciunt itaque eos ipsam saepe. Iure molestias qui perferendis quisquam sed, laboriosam dolores aperiam est saepe voluptatibu.</p>
+        </div>
+        </div>
+   </section>
+
+    <!--skill section-->
+    <section id="skills">
+       
+            <h1 class="text-center m-5 display-4">My Skills</h1>
+            <div class="container">
+                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label>HTML</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%">90%</div>
+                          </div>
+                    </div> 
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label>CSS</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%">80%</div>
+                          </div>
+                    </div>                  
+                </div>
+                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label>Javascript</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%">50%</div>
+                          </div>
+                    </div> 
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label>SQL</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                          </div>
+                    </div>                  
+                </div>
+                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label>Bootstrap</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                          </div>
+                    </div> 
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label>JAVA</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 30%">30%</div>
+                          </div>
+                    </div>                  
+                </div>
+            </div>
+       
+    </section>
+
+
+        <!--Project section-->    
+       <section id="projects">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe src="https://www.youtube.com/embed/L4U0lhNSQzY" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe  src="https://www.youtube.com/embed/Cas8yRHTQM8"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe src="https://www.youtube.com/embed/RlKH1wZwXRw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe src="https://www.youtube.com/embed/j8CNHnqlUMc" allowfullscreen></iframe>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </section>
+
+       <!--Pricing section-->
+       <section id="pricing">
+        <div class="container text-center">
+          <h1 class="display-4">pricing</h1>
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                    <h4>GOLD</h4>
+                </div>
+                <div class="card-body">
+                  <h1>$5/<span class="text-muted">mon</span></h1>
+                  <ul class="list-unstyled">
+                    <li>Including 5 pages</li>
+                    <li>Free source code</li>
+                    <li>Responsive Designs</li>
+                    <li> 3 Days delivery</li>
+                  </ul>
+                  <button class="btn btn-primary px-5">Contact</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                    <h4>DIAMOND</h4>
+                </div>
+                <div class="card-body">
+                  <h1>$15/<span class="text-muted">mon</span></h1>
+                  <ul class="list-unstyled">
+                    <li>Including 5 pages</li>
+                    <li>Free source code</li>
+                    <li>Responsive Designs</li>
+                    <li> 5 Days delivery</li>
+                  </ul>
+                  <button class="btn btn-primary px-5">Contact</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                    <h4>PLATINUM</h4>
+                </div>
+                <div class="card-body">
+                  <h1>$25/<span class="text-muted">mon</span></h1>
+                  <ul class="list-unstyled">
+                    <li>Including 5 pages</li>
+                    <li>Free source code</li>
+                    <li>Responsive Designs</li>
+                    <li> 7 Days delivery</li>
+                  </ul>
+                  <button class="btn btn-primary px-5">Contact</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>  
+
+        <!--Contact section--> 
+        <section id="contact">
+           <div class="container">
+            <div class="row">
+              <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7253.95589384073!2d79.1599398!3d12.0924802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacba587d3aaf1b%3A0xddb3e7b65485a9db!2sAndampallam%20Railway%20Station!5e1!3m2!1sen!2sin!4v1689075838625!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="col-lg-5 col-12">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Enter your message</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <button class="btn btn-primary">send a message</button>
+                </form>
+              </div>
+            </div>
+           </div>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
 </html>
