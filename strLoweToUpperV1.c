@@ -1,0 +1,28 @@
+//String Lower case to Upper Case Version V1
+
+#include<stdio.h>
+#define SIZE 100
+char lowerToUpper(char *str);
+int main(){
+    char str1[SIZE];
+    printf("Enter str1 Element: ");
+    scanf("%[^\n]",str1);
+    
+    lowerToUpper(str1);
+  return 0;
+}
+
+char lowerToUpper(char *str){
+   int i=0;
+   while(str[i]!='\0'){
+       if(str[i]>=97 && str[i]<=122){
+           printf("%c", str[i]-32);
+           i++;
+       }
+       else{
+           printf("%c", str[i]);
+           i++;
+       }
+   }
+    
+}
